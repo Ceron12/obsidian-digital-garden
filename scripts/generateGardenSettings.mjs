@@ -66,23 +66,23 @@ Path Rewriting/Subfolder:this-will-never-hit`,
 };
 
 // const TEST_VAULT_PATH =
-	// "src/dg-testVault/.obsidian/plugins/obsidian-digital-garden/";
+// "src/dg-testVault/.obsidian/plugins/obsidian-digital-garden/";
 
 const TEST_VAULT_PATH = "/home/Ceron/Documents/Obsidian/.obsidianLinux/plugins/digitalgarden2/";
 
-console.log("Creating test vault data.json");
-// write garden settings to test vault
-fs.writeFile(
-	`${TEST_VAULT_PATH}/data.json`,
-	JSON.stringify(gardenSettings, null, 2),
-	function (err) {
-		if (err) {
-			console.log(err);
-		}
-	},
-);
+// console.log("Creating test vault data.json");
+// // write garden settings to test vault
+// fs.writeFile(
+// 	`${TEST_VAULT_PATH}/data.json`,
+// 	JSON.stringify(gardenSettings, null, 2),
+// 	function (err) {
+// 		if (err) {
+// 			console.log(err);
+// 		}
+// 	},
+// );
 
 const FILES_TO_COPY = ["main.js", "manifest.json", "styles.css"];
 console.log("Copying generated files to test vault");
 // copy generated files to test vault
-copyfiles([...FILES_TO_COPY, TEST_VAULT_PATH], {}, () => {});
+copyfiles([...FILES_TO_COPY, TEST_VAULT_PATH], {}, () => { });
