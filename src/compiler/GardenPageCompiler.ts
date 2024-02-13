@@ -696,9 +696,9 @@ export class GardenPageCompiler {
 
 						const cmsImgPath = `/img/user/${linkedFile.path}`;
 
-						const imageMarkdown = `image: [${imageName}](${encodeURI(
+						const imageMarkdown = `image: "[${imageName}](${encodeURI(
 							cmsImgPath,
-						)})`;
+						)})"`;
 
 						assets.push({ path: cmsImgPath, content: imageBase64 });
 
