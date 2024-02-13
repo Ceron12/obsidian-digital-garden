@@ -38,7 +38,7 @@ export class UpdateGardenRepositoryModal extends Modal {
 			? { text: `🎉 Done! Approve your PR to make the changes go live.` }
 			: {
 					text: "You already have the latest template 🎉 No need to create a PR.",
-			  };
+				};
 		const linkText = { text: `${prUrl}`, href: prUrl };
 		this.progressViewTop.createEl("h2", successmessage);
 

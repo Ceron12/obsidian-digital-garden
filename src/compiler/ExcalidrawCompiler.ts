@@ -41,7 +41,7 @@ export class ExcalidrawCompiler {
 				isCompressed
 					? LZString.decompressFromBase64(
 							fileText.slice(start, end).replace(/[\n\r]/g, ""),
-					  )
+						)
 					: fileText.slice(start, end),
 			);
 

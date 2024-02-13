@@ -954,20 +954,21 @@ export default class SettingView {
 			},
 		);
 
-		rewriteSettingsContainer.createEl(
-			"div",
-		).innerHTML = `Define regex filters to replace note content before publishing.`;
+		rewriteSettingsContainer.createEl("div").innerHTML =
+			`Define regex filters to replace note content before publishing.`;
 
 		rewriteSettingsContainer.createEl("div", {
 			attr: { class: "setting-item-description" },
-		}).innerHTML = `Format: [<code>regex pattern</code>, <code>replacement</code>, <code>regex flags</code>]`;
+		}).innerHTML =
+			`Format: [<code>regex pattern</code>, <code>replacement</code>, <code>regex flags</code>]`;
 
 		rewriteSettingsContainer.createEl("div", {
 			attr: {
 				class: "setting-item-description",
 				style: "margin-bottom: 15px",
 			},
-		}).innerHTML = `Example: filter [<code>:smile:</code>, <code>😀</code>, <code>g</code>] will replace text with real emojis`;
+		}).innerHTML =
+			`Example: filter [<code>:smile:</code>, <code>😀</code>, <code>g</code>] will replace text with real emojis`;
 
 		const customFilters = this.settings.customFilters;
 
