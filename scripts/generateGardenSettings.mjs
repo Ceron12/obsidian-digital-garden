@@ -65,8 +65,10 @@ Path Rewriting/Subfolder:this-will-never-hit`,
 	logLevel: Logger.DEBUG,
 };
 
-const TEST_VAULT_PATH =
-	"src/dg-testVault/.obsidian/plugins/obsidian-digital-garden/";
+// const TEST_VAULT_PATH =
+	// "src/dg-testVault/.obsidian/plugins/obsidian-digital-garden/";
+
+const TEST_VAULT_PATH = "/home/Ceron/Documents/Obsidian/.obsidianLinux/plugins/digitalgarden2/";
 
 console.log("Creating test vault data.json");
 // write garden settings to test vault

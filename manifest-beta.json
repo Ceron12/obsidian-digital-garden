@@ -1,10 +1,10 @@
 {
-	"id": "digitalgarden",
-	"name": "Digital Garden",
+	"id": "ceronsdigitalgarden",
+	"name": "Digital Garden 2.0",
 	"version": "2.56.1",
 	"minAppVersion": "0.12.0",
 	"description": "Publish your notes to the web for others to enjoy. For free.",
-	"author": "Ole Eskild Steensen",
+	"author": "Ceron",
 	"authorUrl": "https://dg-docs.ole.dev/",
 	"isDesktopOnly": false,
 	"fundingUrl": "https://ko-fi.com/oleeskild"
