@@ -29,6 +29,7 @@ import {
 } from "../utils/regexes";
 import Logger from "js-logger";
 import { DataviewCompiler } from "./DataviewCompiler";
+import { LeafletCompiler } from "./LeafletCompiler";
 import { PublishFile } from "../publishFile/PublishFile";
 
 export interface Asset {
@@ -106,6 +107,7 @@ export class GardenPageCompiler {
 			this.createBlockIDs,
 			this.createTranscludedText(0),
 			this.convertDataViews,
+			this.convertLeaflet,
 			this.convertLinksToFullPath,
 			this.removeObsidianComments,
 			this.createSvgEmbeds,
@@ -194,6 +196,12 @@ export class GardenPageCompiler {
 		const dataviewCompiler = new DataviewCompiler();
 
 		return await dataviewCompiler.compile(file)(text);
+	};
+
+	convertLeaflet: TCompilerStep = (file) => async (text) => {
+		const leafletCompiler = new LeafletCompiler();
+
+		return await leafletCompiler.compile(file)(text);
 	};
 
 	private stripAwayCodeFencesAndFrontmatter: TCompilerStep = () => (text) => {
